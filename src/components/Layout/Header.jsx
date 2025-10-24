@@ -95,13 +95,13 @@ function Header() {
                 <i className="fa fa-shopping-cart"></i>
                 <span>Cart</span>
               </a>
-              <a
-                href="#"
+              <Link
+                to="/member/login-register"
                 className="flex items-center space-x-1 text-gray-600 hover:text-orange-500"
               >
-                <i className="fa fa-lock"></i>
-                <span>Login</span>
-              </a>
+                <i className="fa fa-user"></i>
+                <span>Register</span>
+              </Link>
             </div>
           </div>
         </div>

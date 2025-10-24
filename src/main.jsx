@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
 import BlogIndex from "./components/Blog/Index.jsx";
 import BlogDetail from "./components/Blog/Detail.jsx";
+import MemberIndex from "./pages/member/Index.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")).render(
           <Route index element={<Home />} />
           <Route path="/blog/list" element={<BlogIndex />} />
           <Route path="/blog/detail/:id" element={<BlogDetail />} />
+          <Route path="/member/login-register" element={<MemberIndex />} />
         </Route>
       </Routes>
     </Router>
