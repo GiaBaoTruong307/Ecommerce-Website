@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 
 function Header() {
+  const token = localStorage.getItem("token");
+
+  const handleLogOut = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+    alert("Đăng xuất thành công");
+  };
+
   return (
     <header id="header" className="w-full">
       {/* Header Top */}
@@ -100,7 +108,11 @@ function Header() {
                 className="flex items-center space-x-1 text-gray-600 hover:text-orange-500"
               >
                 <i className="fa fa-user"></i>
-                <span>Register</span>
+                {token ? (
+                  <span onClick={handleLogOut}>Logout</span>
+                ) : (
+                  <span>Login</span>
+                )}
               </Link>
             </div>
           </div>
