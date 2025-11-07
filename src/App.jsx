@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "./components/Layout/Header.jsx";
-import Footer from "./components/Layout/Footer.jsx";
+import Footer from "./components/layout/Footer.jsx";
 import MenuLeft from "./components/Layout/MenuLeft.jsx";
 
 function App() {

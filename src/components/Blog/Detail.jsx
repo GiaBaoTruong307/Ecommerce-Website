@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import Rate from "./Rate";
+import ListComments from "./ListComments";
+import Comment from "./Comment";
 
 function Detail() {
   const { id } = useParams();
   const [detailBlog, setDetailBlog] = useState(null);
+  const [refreshComments, setRefreshComments] = useState(false);
 
   useEffect(() => {
     axios
@@ -104,153 +108,14 @@ function Detail() {
         )}
       </div>
 
-      {/* Rating Area */}
-      <div className="bg-white rounded-lg shadow-sm p-6 mt-6">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
-          <div className="flex items-center space-x-4 mb-4 sm:mb-0">
-            <span className="text-gray-700 font-medium">Rate this item:</span>
-            <div className="flex items-center space-x-1">
-              <i className="fa fa-star text-orange-500"></i>
-              <i className="fa fa-star text-orange-500"></i>
-              <i className="fa fa-star text-orange-500"></i>
-              <i className="fa fa-star text-gray-300"></i>
-              <i className="fa fa-star text-gray-300"></i>
-            </div>
-            <span className="text-orange-500 text-sm">(6 votes)</span>
-          </div>
-        </div>
-
-        {/* Tags */}
-        <div className="flex items-center space-x-4">
-          <span className="text-gray-700 font-medium">TAG:</span>
-          <div className="flex items-center space-x-2">
-            <a className="text-orange-500 hover:text-orange-600" href="#">
-              Pink <span className="text-gray-400">/</span>
-            </a>
-            <a className="text-orange-500 hover:text-orange-600" href="#">
-              T-Shirt <span className="text-gray-400">/</span>
-            </a>
-            <a className="text-orange-500 hover:text-orange-600" href="#">
-              Girls
-            </a>
-          </div>
-        </div>
-      </div>
+      {/* Rate Component */}
+      <Rate />
 
       {/* Comments Area */}
-      <div className="bg-white rounded-lg shadow-sm p-6 mt-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6">3 RESPONSES</h2>
-
-        <ul className="space-y-6">
-          {/* Comment 1 */}
-          <li className="flex space-x-4">
-            <a href="#" className="flex-shrink-0">
-              <img
-                className="w-12 h-12 rounded-full object-cover"
-                src="images/blog/man-two.jpg"
-                alt=""
-              />
-            </a>
-            <div className="flex-1">
-              <ul className="flex items-center space-x-6 text-sm text-gray-500 mb-3">
-                <li className="flex items-center space-x-2">
-                  <i className="fa fa-user text-orange-500"></i>
-                  <span>Janis Gallagher</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <i className="fa fa-clock-o text-orange-500"></i>
-                  <span>1:33 pm</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <i className="fa fa-calendar text-orange-500"></i>
-                  <span>DEC 5, 2013</span>
-                </li>
-              </ul>
-              <p className="text-gray-600 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <a
-                className="inline-flex items-center space-x-2 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded transition-colors"
-                href="#"
-              >
-                <i className="fa fa-reply"></i>
-                <span>Replay</span>
-              </a>
-            </div>
-          </li>
-
-          {/* Comment 2 */}
-          <li className="flex space-x-4 ml-8">
-            <a href="#" className="flex-shrink-0">
-              <img
-                className="w-12 h-12 rounded-full object-cover"
-                src="images/blog/man-three.jpg"
-                alt=""
-              />
-            </a>
-            <div className="flex-1">
-              <ul className="flex items-center space-x-6 text-sm text-gray-500 mb-3">
-                <li className="flex items-center space-x-2">
-                  <i className="fa fa-user text-orange-500"></i>
-                  <span>Janis Gallagher</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <i className="fa fa-clock-o text-orange-500"></i>
-                  <span>1:33 pm</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <i className="fa fa-calendar text-orange-500"></i>
-                  <span>DEC 5, 2013</span>
-                </li>
-              </ul>
-              <p className="text-gray-600 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <a
-                className="inline-flex items-center space-x-2 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded transition-colors"
-                href="#"
-              >
-                <i className="fa fa-reply"></i>
-                <span>Replay</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <ListComments refreshComments={refreshComments} />
 
       {/* Reply Box */}
-      <div className="bg-white rounded-lg shadow-sm p-6 mt-6">
-        <div className="w-full">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">
-            Leave a replay
-          </h2>
-          <div className="space-y-4">
-            <div>
-              <label className="block text-gray-700 font-medium mb-2">
-                Your Name <span className="text-red-500">*</span>
-              </label>
-              <textarea
-                name="message"
-                rows={11}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 resize-vertical"
-                defaultValue=""
-              />
-            </div>
-            <a
-              className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
-              href="#"
-            >
-              Post Comment
-            </a>
-          </div>
-        </div>
-      </div>
+      <Comment onCommentPosted={() => setRefreshComments(!refreshComments)} />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
-import BlogIndex from "./components/Blog/Index.jsx";
+import BlogIndex from "./components/Blog/index.jsx";
 import BlogDetail from "./components/Blog/Detail.jsx";
 import MemberIndex from "./pages/member/Index.jsx";
 
