@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import CommentItem from "./CommentItem";
 import { buildCommentTree } from "../../utils/buildCommentTree";
 
-function ListComments({ refreshComments }) {
+function ListComments({ refreshComments, onReplyPosted }) {
   const { id } = useParams();
   const [comments, setComments] = useState([]);
   const [replyingTo, setReplyingTo] = useState(null);
@@ -32,6 +32,9 @@ function ListComments({ refreshComments }) {
 
   const handleReplySuccess = () => {
     setReplyingTo(null);
+    if (onReplyPosted) {
+      onReplyPosted();
+    }
   };
 
   // Đếm tổng tất cả comments (bao gồm cả replies)

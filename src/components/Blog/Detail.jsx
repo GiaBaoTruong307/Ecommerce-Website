@@ -112,7 +112,10 @@ function Detail() {
       <Rate />
 
       {/* Comments Area */}
-      <ListComments refreshComments={refreshComments} />
+      <ListComments
+        refreshComments={refreshComments}
+        onReplyPosted={() => setRefreshComments(!refreshComments)}
+      />
 
       {/* Reply Box */}
       <Comment onCommentPosted={() => setRefreshComments(!refreshComments)} />
