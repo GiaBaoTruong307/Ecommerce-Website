@@ -1,0 +1,43 @@
+import { useContext, useEffect, useState } from 'react'
+import { ShopContext } from '../context/ShopContext'
+import type { Product } from '../context/ShopContext'
+
+import Title from './Title'
+import ProductItem from './ProductItem'
+
+const BestSeller = () => {
+  const { products } = useContext(ShopContext)!
+  const [bestSeller, setBestSeller] = useState<Product[]>([])
+
+  useEffect(() => {
+    const bestProduct = products.filter((item: any) => item.bestseller)
+    setBestSeller(bestProduct.slice(0, 5))
+  }, [])
+
+  return (
+    <div className="my-10">
+      <div className="py-8 text-center text-3xl">
+        <Title text1="BEST" text2="SELLER" />
+        <p className="m-auto w-3/4 text-xs text-gray-600 sm:text-sm md:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus porro blanditiis iusto
+          perferendis ipsum laboriosam placeat magnam quam illo consequatur, molestias, iure
+          maiores, dolorum laborum eveniet incidunt consequuntur voluptatum fugit.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4 gap-y-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+        {bestSeller.map((item, index) => (
+          <ProductItem
+            key={index}
+            id={item._id}
+            name={item.name}
+            image={item.image}
+            price={item.price}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default BestSeller
