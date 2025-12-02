@@ -19,8 +19,8 @@ interface ShopContextType {
 export const ShopContext = createContext<ShopContextType | null>(null)
 
 export const ShopProvider = ({ children }: { children: ReactNode }) => {
-  const currency = '$'
-  const delivery_fee = 10
+  const currency = 'đ'
+  const delivery_fee = 30000
 
   const [search, setSearch] = useState('')
   const [showSearch, setShowSearch] = useState(false)
@@ -32,28 +32,26 @@ export const ShopProvider = ({ children }: { children: ReactNode }) => {
       return
     }
 
-    setCartItems((prev) => {
-      const newCart = structuredClone(prev)
-      newCart[itemId] ??= {}
-      newCart[itemId][size] = (newCart[itemId][size] || 0) + 1
-      return newCart
-    })
+    setCartItems((prev) => ({
+      ...prev,
+      [itemId]: {
+        ...prev[itemId],
+        [size]: (prev[itemId]?.[size] || 0) + 1,
+      },
+    }))
 
     toast.success('Đã thêm vào giỏ hàng!')
   }
 
   useEffect(() => {
-    console.log('Giỏ hàng hiện tại:', cartItems)
+    console.log('Giỏ hàng:', cartItems)
   }, [cartItems])
 
-  const getCartCount = (): number => {
-    let count = 0
-    Object.values(cartItems).forEach((sizes) => {
-      Object.values(sizes).forEach((qty) => {
-        count += qty
-      })
-    })
-    return count
+  const getCartCount = () => {
+    return Object.values(cartItems).reduce(
+      (total, sizes) => total + Object.values(sizes).reduce((sum, qty) => sum + qty, 0),
+      0
+    )
   }
 
   const value: ShopContextType = {

@@ -1,7 +1,8 @@
 import { useContext, useEffect, useState } from 'react'
-import { ShopContext, type Product } from '../../context/ShopContext'
 import Title from './Title'
 import ProductItem from './ProductItem'
+import { ShopContext } from '../../context/ShopContext'
+import { type Product } from '../../types'
 
 interface Props {
   category: string
