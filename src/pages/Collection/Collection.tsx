@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from 'react'
-import { ShopContext, type Product } from '../context/ShopContext'
-import { assets } from '../assets/assets'
-import Title from '../components/Title'
-import ProductItem from '../components/ProductItem'
+import { ShopContext, type Product } from '../../context/ShopContext'
+import { assets } from '../../constants/assets'
+import Title from '../../components/ui/Title'
+import ProductItem from '../../components/ui/ProductItem'
 
 const Collection = () => {
   const { products, search, showSearch } = useContext(ShopContext)!

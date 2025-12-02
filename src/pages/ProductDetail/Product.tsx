@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { ShopContext, type Product as ProductType } from '../context/ShopContext'
-import { assets } from '../assets/assets'
-import RelatedProducts from '../components/RelatedProducts'
+import { ShopContext, type Product as ProductType } from '../../context/ShopContext'
+import { assets } from '../../constants/assets'
+import RelatedProducts from '../../components/ui/RelatedProducts'
 
 const Product = () => {
   const { id } = useParams<{ id: string }>()
