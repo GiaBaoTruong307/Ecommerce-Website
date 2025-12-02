@@ -96,7 +96,7 @@ export const assets = {
 
 export const products = [
   {
-    _id: 'aaaaa',
+    id: 'aaaaa',
     name: 'Women Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -109,7 +109,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: 'aaaab',
+    id: 'aaaab',
     name: 'Men Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -122,7 +122,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: 'aaaac',
+    id: 'aaaac',
     name: 'Girls Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -135,7 +135,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: 'aaaad',
+    id: 'aaaad',
     name: 'Men Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -148,7 +148,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: 'aaaae',
+    id: 'aaaae',
     name: 'Women Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -161,7 +161,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: 'aaaaf',
+    id: 'aaaaf',
     name: 'Girls Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -174,7 +174,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: 'aaaag',
+    id: 'aaaag',
     name: 'Men Tapered Fit Flat-Front Trousers',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -187,7 +187,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaah',
+    id: 'aaaah',
     name: 'Men Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -200,7 +200,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaai',
+    id: 'aaaai',
     name: 'Girls Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -213,7 +213,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaaj',
+    id: 'aaaaj',
     name: 'Men Tapered Fit Flat-Front Trousers',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -226,7 +226,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaak',
+    id: 'aaaak',
     name: 'Men Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -239,7 +239,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaal',
+    id: 'aaaal',
     name: 'Men Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -252,7 +252,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaam',
+    id: 'aaaam',
     name: 'Women Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -265,7 +265,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaan',
+    id: 'aaaan',
     name: 'Boy Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -278,7 +278,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaao',
+    id: 'aaaao',
     name: 'Men Tapered Fit Flat-Front Trousers',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -291,7 +291,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaap',
+    id: 'aaaap',
     name: 'Girls Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -304,7 +304,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaaq',
+    id: 'aaaaq',
     name: 'Men Tapered Fit Flat-Front Trousers',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -317,7 +317,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaar',
+    id: 'aaaar',
     name: 'Boy Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -330,7 +330,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaas',
+    id: 'aaaas',
     name: 'Boy Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -343,7 +343,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaat',
+    id: 'aaaat',
     name: 'Women Palazzo Pants with Waist Belt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -356,7 +356,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaau',
+    id: 'aaaau',
     name: 'Women Zip-Front Relaxed Fit Jacket',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -369,7 +369,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaav',
+    id: 'aaaav',
     name: 'Women Palazzo Pants with Waist Belt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -382,7 +382,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaaw',
+    id: 'aaaaw',
     name: 'Boy Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -395,7 +395,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaax',
+    id: 'aaaax',
     name: 'Boy Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -408,7 +408,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaay',
+    id: 'aaaay',
     name: 'Girls Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -421,7 +421,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaaz',
+    id: 'aaaaz',
     name: 'Women Zip-Front Relaxed Fit Jacket',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -434,7 +434,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaba',
+    id: 'aaaba',
     name: 'Girls Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -447,7 +447,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabb',
+    id: 'aaabb',
     name: 'Men Slim Fit Relaxed Denim Jacket',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -460,7 +460,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabc',
+    id: 'aaabc',
     name: 'Women Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -473,7 +473,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabd',
+    id: 'aaabd',
     name: 'Girls Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -486,7 +486,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabe',
+    id: 'aaabe',
     name: 'Men Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -499,7 +499,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabf',
+    id: 'aaabf',
     name: 'Men Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -512,7 +512,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabg',
+    id: 'aaabg',
     name: 'Girls Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -525,7 +525,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabh',
+    id: 'aaabh',
     name: 'Women Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -538,7 +538,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabi',
+    id: 'aaabi',
     name: 'Women Zip-Front Relaxed Fit Jacket',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -551,7 +551,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabj',
+    id: 'aaabj',
     name: 'Women Zip-Front Relaxed Fit Jacket',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -564,7 +564,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabk',
+    id: 'aaabk',
     name: 'Women Round Neck Cotton Top',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -577,7 +577,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabl',
+    id: 'aaabl',
     name: 'Men Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -590,7 +590,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabm',
+    id: 'aaabm',
     name: 'Men Printed Plain Cotton Shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -603,7 +603,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabn',
+    id: 'aaabn',
     name: 'Men Slim Fit Relaxed Denim Jacket',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -616,7 +616,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabo',
+    id: 'aaabo',
     name: 'Men Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -629,7 +629,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabp',
+    id: 'aaabp',
     name: 'Boy Round Neck Pure Cotton T-shirt',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -642,7 +642,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabq',
+    id: 'aaabq',
     name: 'Kid Tapered Slim Fit Trouser',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -655,7 +655,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabr',
+    id: 'aaabr',
     name: 'Women Zip-Front Relaxed Fit Jacket',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -668,7 +668,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabs',
+    id: 'aaabs',
     name: 'Men Slim Fit Relaxed Denim Jacket',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -681,7 +681,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabt',
+    id: 'aaabt',
     name: 'Men Slim Fit Relaxed Denim Jacket',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -694,7 +694,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabu',
+    id: 'aaabu',
     name: 'Kid Tapered Slim Fit Trouser',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -707,7 +707,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabv',
+    id: 'aaabv',
     name: 'Men Slim Fit Relaxed Denim Jacket',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -720,7 +720,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabw',
+    id: 'aaabw',
     name: 'Kid Tapered Slim Fit Trouser',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -733,7 +733,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabx',
+    id: 'aaabx',
     name: 'Kid Tapered Slim Fit Trouser',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -746,7 +746,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaaby',
+    id: 'aaaby',
     name: 'Women Zip-Front Relaxed Fit Jacket',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',
@@ -759,7 +759,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: 'aaabz',
+    id: 'aaabz',
     name: 'Men Slim Fit Relaxed Denim Jacket',
     description:
       'A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.',

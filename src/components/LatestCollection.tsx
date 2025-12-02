@@ -24,11 +24,11 @@ const LatestCollection = () => {
       </div>
 
       {/* Rendering Products */}
-      <div className="md:grid-col-4 grid grid-cols-2 gap-4 gap-y-6 sm:grid-cols-3 lg:grid-cols-5">
+      <div className="grid grid-cols-2 gap-4 gap-y-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {latestProducts.map((item, index) => (
           <ProductItem
             key={index}
-            id={item._id}
+            id={item.id}
             image={item.image}
             name={item.name}
             price={item.price}
