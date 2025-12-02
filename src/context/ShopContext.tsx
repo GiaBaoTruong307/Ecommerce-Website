@@ -19,7 +19,7 @@ interface ShopContextType {
 export const ShopContext = createContext<ShopContextType | null>(null)
 
 export const ShopProvider = ({ children }: { children: ReactNode }) => {
-  const currency = 'đ'
+  const currency = '$'
   const delivery_fee = 30000
 
   const [search, setSearch] = useState('')
@@ -28,7 +28,7 @@ export const ShopProvider = ({ children }: { children: ReactNode }) => {
 
   const addToCart = (itemId: string, size: string) => {
     if (!size) {
-      toast.error('Vui lòng chọn kích cỡ!')
+      toast.error('Please select a size before adding to cart.')
       return
     }
 
@@ -40,11 +40,11 @@ export const ShopProvider = ({ children }: { children: ReactNode }) => {
       },
     }))
 
-    toast.success('Đã thêm vào giỏ hàng!')
+    toast.success('Added to cart!')
   }
 
   useEffect(() => {
-    console.log('Giỏ hàng:', cartItems)
+    console.log('Cart:', cartItems)
   }, [cartItems])
 
   const getCartCount = () => {
