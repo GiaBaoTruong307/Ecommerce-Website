@@ -1,6 +1,6 @@
 import BestSeller from '../../components/sections/BestSeller'
 import Hero from '../../components/sections/Hero'
-import LatestCollection from '../../components/ui/LatestCollection'
+import LatestCollection from '../../components/sections/LatestCollection'
 import NewsletterBox from '../../components/ui/NewsletterBox'
 import OurPolicy from '../../components/ui/OurPolicy'
 

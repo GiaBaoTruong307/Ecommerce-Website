@@ -7,7 +7,9 @@ import { ShopProvider } from './context/ShopContext.tsx'
 createRoot(document.getElementById('root')!).render(
   <Router>
     <ShopProvider>
-      <App />
+      <div className="min-h-screen px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+        <App />
+      </div>
     </ShopProvider>
   </Router>
 )

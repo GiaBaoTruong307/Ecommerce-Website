@@ -1,6 +1,5 @@
-import { useContext } from 'react'
-import { ShopContext } from '../../context/ShopContext'
 import { Link } from 'react-router'
+import { useShopContext } from '../../hooks/useShopContext'
 
 interface Props {
   id: string
@@ -10,7 +9,7 @@ interface Props {
 }
 
 const ProductItem = ({ id, image, name, price }: Props) => {
-  const { currency } = useContext(ShopContext)!
+  const { currency } = useShopContext()
 
   return (
     <Link className="cursor-pointer text-gray-700" to={`/product/${id}`}>

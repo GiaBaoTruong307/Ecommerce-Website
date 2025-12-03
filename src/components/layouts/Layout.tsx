@@ -1,4 +1,3 @@
-// src/components/layouts/MainLayout.tsx
 import { Outlet } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -12,8 +11,7 @@ const Layout = () => {
       <Navbar />
       <SearchBar />
 
-      {/* Nội dung page sẽ hiện ở đây */}
-      <main className="flex-1 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+      <main className="flex-1">
         <Outlet />
       </main>
 
