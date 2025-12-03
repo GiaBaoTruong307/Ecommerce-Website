@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { assets } from '../../constants/assets'
-import RelatedProducts from '../../components/sections/RelatedProducts'
+import RelatedProducts from './components/RelatedProducts'
 import { useShopContext } from '../../hooks/useShopContext'
 import { type Product as ProductType } from '../../types'
 

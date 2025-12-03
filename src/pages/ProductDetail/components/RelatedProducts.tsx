@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import Title from '../ui/Title'
-import ProductItem from '../ui/ProductItem'
-import { type Product } from '../../types'
-import { useShopContext } from '../../hooks/useShopContext'
+import Title from '../../../components/ui/Title'
+import ProductItem from '../../../components/products/ProductItem'
+import { type Product } from '../../../types'
+import { useShopContext } from '../../../hooks/useShopContext'
 
 interface Props {
   category: string

@@ -1,4 +1,4 @@
-import { assets } from '../../constants/assets'
+import { assets } from '../../../constants/assets'
 
 const OurPolicy = () => {
   return (

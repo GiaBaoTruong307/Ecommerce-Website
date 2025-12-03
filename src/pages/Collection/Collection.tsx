@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { assets } from '../../constants/assets'
 import Title from '../../components/ui/Title'
-import ProductItem from '../../components/ui/ProductItem'
+import ProductItem from '../../components/products/ProductItem'
 import { type Product } from '../../types'
 import { useShopContext } from '../../hooks/useShopContext'
 
