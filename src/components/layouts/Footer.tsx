@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { assets } from '../../constants/assets'
 
 const Footer = () => {
@@ -7,19 +8,27 @@ const Footer = () => {
         <div>
           <img src={assets.logo} className="mb-5 w-32" alt="" />
           <p className="w-full text-gray-600 md:w-2/3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet molestiae inventore
-            nostrum perspiciatis, maxime laudantium, harum sed quaerat facilis corrupti omnis error
-            suscipit similique dicta atque. Suscipit enim ad iusto!
+            Forever is your go-to destination for modern, high-quality fashion. We bring timeless
+            style, exceptional craftsmanship, and the latest trends straight to your wardrobe — all
+            with effortless shopping and outstanding service.
           </p>
         </div>
 
         <div>
           <p className="mb-5 text-xl font-medium">COMPANY</p>
           <ul className="flex flex-col gap-1 text-gray-600">
-            <li>Home</li>
-            <li>About</li>
-            <li>Delivery</li>
-            <li>Policy</li>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+            <Link to="/about">
+              <li>About</li>
+            </Link>
+            <Link to="/place-order">
+              <li>Delivery</li>
+            </Link>
+            <Link to="#">
+              <li>Privacy policy</li>
+            </Link>
           </ul>
         </div>
 
@@ -34,7 +43,9 @@ const Footer = () => {
 
       <div>
         <hr />
-        <p className="py-5 text-center text-sm">Copyright 2025@ forever.com - All Right Reserved</p>
+        <p className="py-5 text-center text-sm">
+          Copyright 2025@ GiaBaoTruong - All Right Reserved
+        </p>
       </div>
     </div>
   )

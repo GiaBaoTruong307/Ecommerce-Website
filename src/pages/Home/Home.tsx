@@ -1,7 +1,7 @@
 import BestSeller from './components/BestSeller'
 import Hero from '../../components/sections/Hero'
 import LatestCollection from './components/LatestCollection'
-import NewsletterBox from './components/NewsletterBox'
+import NewsletterBox from '../../components/ui/NewsletterBox'
 import OurPolicy from './components/OurPolicy'
 
 const Home = () => {

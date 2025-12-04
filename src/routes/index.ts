@@ -24,11 +24,16 @@ export const routes = [
       { path: '/place-order', element: PlaceOrder, label: 'Thanh toán', private: true },
       { path: '/orders', element: Orders, label: 'Đơn hàng', private: true },
       { path: '*', element: NotFound, hidden: true },
+      {
+        path: '/login',
+        element: Login,
+        label: 'Đăng nhập',
+      },
     ],
   },
   // Trang không có layout (login, register…)
-  {
-    path: '/login',
-    element: Login,
-  },
+  // {
+  //   path: '/login',
+  //   element: Login,
+  // },
 ]

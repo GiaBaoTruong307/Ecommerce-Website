@@ -12,6 +12,8 @@ export const ShopProvider = ({ children }: { children: ReactNode }) => {
   const [search, setSearch] = useState('')
   const [showSearch, setShowSearch] = useState(false)
   const [cartItems, setCartItems] = useState<CartItems>({})
+
+  // Navigation
   const navigate = useNavigate()
 
   // Add item to cart

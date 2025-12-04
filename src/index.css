@@ -4,8 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-a.active hr {
-  display: block;
+.underline-bar {
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.35s ease;
+}
+
+.active .underline-bar {
+  transform: scaleX(1);
 }
 
 * {
@@ -20,11 +26,4 @@ a.active hr {
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-@media (max-width: 640px) {
-  a.active {
-    background-color: black;
-    color: white;
-  }
 }

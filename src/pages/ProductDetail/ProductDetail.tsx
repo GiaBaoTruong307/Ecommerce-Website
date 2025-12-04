@@ -103,14 +103,16 @@ const Product = () => {
         </div>
         <div className="flex flex-col gap-4 border p-6 text-sm text-gray-500">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae reiciendis
-            doloremque dolore unde adipisci tempore inventore alias cupiditate vero nemo fugiat
-            necessitatibus nostrum fuga nihil dicta dolores, tenetur libero!
+            This product is crafted with premium materials to ensure long-lasting durability and
+            comfort. Designed with a modern aesthetic, it fits effortlessly into any lifestyle and
+            can be used daily without compromising quality. Whether you're heading out or staying
+            in, this item is made to provide both style and practicality.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, aut! Perspiciatis, a
-            nulla ipsa delectus consequuntur esse alias est assumenda aut quis. Omnis corporis eaque
-            incidunt veritatis ipsum, repellendus dolorum?
+            Each piece goes through a detailed quality-check process to meet high manufacturing
+            standards. We focus on both functionality and appearance, offering you a product that
+            not only looks great but also performs reliably. Customer satisfaction is our priority,
+            and we aim to bring you a smooth, enjoyable experience every time you use it.
           </p>
         </div>
       </div>
