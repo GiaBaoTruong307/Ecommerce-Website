@@ -1,8 +1,12 @@
 import { assets } from '../../../constants/assets'
+import { motion } from 'framer-motion'
 
 const OurPolicy = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, x: 200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
       id="Privacy"
       className="flex flex-col justify-around gap-12 py-20 text-center text-xs text-gray-700 sm:flex-row sm:gap-2 sm:text-sm md:text-base"
     >
@@ -22,7 +26,7 @@ const OurPolicy = () => {
         <p className="font-semibold">Best customer support</p>
         <p className="text-gray-400">We provide 24/7 customer support</p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

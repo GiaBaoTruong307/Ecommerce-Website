@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { assets } from '../../constants/assets'
 import { Link, useLocation } from 'react-router-dom'
 import { useShopContext } from '../../hooks/useShopContext'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false)
@@ -12,7 +13,12 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path
 
   return (
-    <div className="flex items-center justify-between py-5 font-medium">
+    <motion.div
+      initial={{ opacity: 0, y: -80 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="flex items-center justify-between py-5 font-medium"
+    >
       <Link to="/">
         <img src={assets.logo} className="w-36" alt="Logo" />
       </Link>
@@ -119,7 +125,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

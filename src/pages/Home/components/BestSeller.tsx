@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../../../context/ShopContext'
 import type { Product } from '../../../types'
+import { motion } from 'framer-motion'
 
 import Title from '../../../components/ui/Title'
 import ProductItem from '../../../components/products/ProductItem'
@@ -15,7 +16,12 @@ const BestSeller = () => {
   }, [])
 
   return (
-    <div className="my-10">
+    <motion.div
+      initial={{ opacity: 0, x: -200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      className="my-10"
+    >
       <div className="py-8 text-center text-3xl">
         <Title text1="BEST" text2="SELLER" />
         <p className="m-auto w-3/4 text-xs text-gray-600 sm:text-sm md:text-base">
@@ -36,7 +42,7 @@ const BestSeller = () => {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

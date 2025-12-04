@@ -1,10 +1,15 @@
 import NewsletterBox from '../../components/ui/NewsletterBox'
 import Title from '../../components/ui/Title'
 import { assets } from '../../constants/assets'
+import { motion } from 'framer-motion'
 
 const Contact = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ scale: 1.3, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.6 }}
+    >
       <div className="border-t pt-10 text-center text-2xl">
         <Title text1="CONTACT" text2="US" />
       </div>
@@ -30,7 +35,7 @@ const Contact = () => {
       </div>
 
       <NewsletterBox />
-    </div>
+    </motion.div>
   )
 }
 

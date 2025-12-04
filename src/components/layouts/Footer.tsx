@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom'
 import { assets } from '../../constants/assets'
+import { motion } from 'framer-motion'
 
 const Footer = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+      viewport={{ once: true }}
+    >
       <div className="my-10 mt-40 flex grid-cols-[3fr_1fr_1fr] flex-col gap-14 text-sm sm:grid">
         <div>
           <img src={assets.logo} className="mb-5 w-32" alt="" />
@@ -47,7 +53,7 @@ const Footer = () => {
           Copyright 2025@ GiaBaoTruong - All Right Reserved
         </p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
